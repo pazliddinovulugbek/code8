@@ -1,0 +1,36 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+    border-radius:4px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: dodgerblue;
+    transition: 1s;
+    color: white;
+    transform: translateX(-1000px);
+}
+
+
+.container:hover .box{
+    /* transform: translateX(100px) translateY(100px);
+    transform: rotate(180deg); */
+    /* transform: rotateY(180deg);
+    transform: scale(0);
+    transform-origin: top right; */
+    /* transform: skewY(180deg); */
+    /* transform: translateX(150px) translateY(-150) rotate(360deg) scale(2); */
+    transform: translateX(0)
+}
